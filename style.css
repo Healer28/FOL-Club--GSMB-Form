@@ -15,7 +15,7 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 #container {
   margin: 20px;
@@ -136,7 +136,6 @@ form:has(.regno:focus) #regno {
 @media screen and (width <=600px) {
   body {
     overflow: visible;
-
     overflow-x: hidden;
   }
   #main {
@@ -144,7 +143,7 @@ form:has(.regno:focus) #regno {
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   #container {
     margin: 0 10px;
@@ -176,11 +175,11 @@ form:has(.regno:focus) #regno {
     overflow-x: hidden;
   }
   #main {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    padding-top: 30px;
   }
   #container {
     margin: 0 10px;
@@ -202,15 +201,5 @@ form:has(.regno:focus) #regno {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
-}
-@media screen and (max-height: 700px) {
-  body {
-    overflow: visible;
-    overflow-x: hidden;
-  }
-  #main {
-    height: 110vh;
-    padding-top: 10rem 0 0 0;
   }
 }
