@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #eaedef;
+}
+#main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  margin: 100px 20px 100px 20px;
+  height: 650px;
+  width: 500px;
+  background-color: white;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 0 100px 3px rgba(96, 152, 221, 0.1);
+}
+#descrip {
+  margin: 10px 40px;
+
+  color: #353639;
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+hr {
+  appearance: none;
+  border-color: #1a5bcc;
+  border-width: 0;
+  border-top-width: 1.6px;
+  border-bottom-width: 1.6px;
+  border-style: solid;
+  width: 100%;
+  background-color: #1a5bcc;
+}
+#container img {
+  margin: 10px 110px 10px 110px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+#container #divform {
+  margin-top: 15px;
+  height: 100%;
+  width: 70%;
+}
+#container #Title {
+  margin: 0px 25px;
+  text-align: center;
+  font-size: 22px;
+  color: #353639;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  appearance: none;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 2px solid #eaedef;
+  font-size: 10px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  color: #9aa5b1;
+}
+form #submit {
+  margin-top: 15px;
+  font-size: 11px;
+  padding: 10px 10px;
+  border: none;
+  background-color: #1a5bcc;
+  color: #eaedef;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  box-shadow: 0 0 10px 3px rgba(96, 152, 221, 0.3);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-border: none;
+}
+input:focus {
+  outline: none;
+  border-width: 2px;
+  border-color: rgb(96, 152, 221);
+}
+form:has(.name:focus) #name {
+  font-weight: 600;
+  color: #353639;
+}
+form:has(.phnno:focus) #phnno {
+  font-weight: 600;
+  color: #353639;
+}
+form:has(.email:focus) #email {
+  font-weight: 600;
+  color: #353639;
+}
+form:has(.regno:focus) #regno {
+  font-weight: 600;
+  color: #353639;
+}
+#submit:hover {
+  transition: all 0.2s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+@media screen and (width <=500px) {
+  #container {
+    margin: 10px;
+    margin-top: 50px;
+    height: 650px;
+    width: 500px;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 100px 3px rgba(96, 152, 221, 0.1);
+  }
+  #descrip {
+    margin: 10px 30px;
+
+    color: #353639;
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
