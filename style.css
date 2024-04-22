@@ -134,6 +134,11 @@ form:has(.regno:focus) #regno {
   cursor: pointer;
 }
 @media screen and (width <=600px) {
+  body {
+    overflow: visible;
+
+    overflow-x: hidden;
+  }
   #main {
     height: 120vh;
     width: 100vw;
@@ -166,6 +171,8 @@ form:has(.regno:focus) #regno {
 }
 @media screen and (width <=400px) {
   body {
+    overflow: visible;
+
     overflow-x: hidden;
   }
   #main {
