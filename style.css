@@ -15,9 +15,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* padding: 10px 0; */
 }
 #container {
-  margin: 100px 20px 100px 20px;
+  margin: 20px;
+
   height: 650px;
   width: 500px;
   background-color: white;
@@ -132,10 +134,18 @@ form:has(.regno:focus) #regno {
   cursor: pointer;
 }
 @media screen and (width <=500px) {
+  #main {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 0; */
+  }
   #container {
     margin: 10px;
-    margin-top: 50px;
-    height: 650px;
+    /* margin-top: 50px; */
+    height: 700px;
     width: 500px;
     background-color: white;
     z-index: 3;
