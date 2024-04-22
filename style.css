@@ -8,14 +8,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   background-color: #eaedef;
+  overflow: hidden;
 }
 #main {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* padding: 10px 0; */
+  padding-top: 20px;
 }
 #container {
   margin: 20px;
@@ -139,7 +139,7 @@ form:has(.regno:focus) #regno {
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* padding: 10px 0; */
   }
   #container {
@@ -167,12 +167,11 @@ form:has(.regno:focus) #regno {
 }
 @media screen and (width <=350px) {
   #main {
-    height: 120vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* padding: 10px 0; */
+    /* align-items: center; */
   }
   #container {
     margin: 0 10px;
@@ -194,5 +193,14 @@ form:has(.regno:focus) #regno {
     display: flex;
     flex-direction: column;
     gap: 5px;
+  }
+}
+@media screen and (max-height: 700px) {
+  body {
+    overflow: visible;
+  }
+  #main {
+    height: 110vh;
+    padding-top: 10rem 0 0 0;
   }
 }
