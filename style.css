@@ -144,7 +144,6 @@ form:has(.regno:focus) #regno {
   }
   #container {
     margin: 0 10px;
-    /* margin-top: 50px; */
     height: 700px;
     width: 500px;
     background-color: white;
@@ -177,7 +176,6 @@ form:has(.regno:focus) #regno {
   }
   #container {
     margin: 0 10px;
-    /* margin-top: 50px; */
     height: 750px;
     width: 500px;
     background-color: white;
@@ -190,7 +188,6 @@ form:has(.regno:focus) #regno {
   }
   #descrip {
     margin: 10px 30px;
-
     color: #353639;
     font-size: 11px;
     font-weight: 400;
