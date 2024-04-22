@@ -133,14 +133,13 @@ form:has(.regno:focus) #regno {
   opacity: 0.8;
   cursor: pointer;
 }
-@media screen and (width <=500px) {
+@media screen and (width <=600px) {
   #main {
     height: 120vh;
     width: 100vw;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* padding: 10px 0; */
+    padding-top: 20px;
   }
   #container {
     margin: 0 10px;
@@ -165,7 +164,10 @@ form:has(.regno:focus) #regno {
     gap: 5px;
   }
 }
-@media screen and (width <=350px) {
+@media screen and (width <=400px) {
+  body {
+    overflow-x: hidden;
+  }
   #main {
     height: 100vh;
     width: 100vw;
@@ -198,6 +200,7 @@ form:has(.regno:focus) #regno {
 @media screen and (max-height: 700px) {
   body {
     overflow: visible;
+    overflow-x: hidden;
   }
   #main {
     height: 110vh;
